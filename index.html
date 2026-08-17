@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Rape and Sexual Abuse in Hindu Scriptures - Reference Documentation</title>
 
     <style>
@@ -115,6 +116,18 @@
             display: none;
         }
 
+        .source {
+            margin-bottom: 24px;
+        }
+
+        .translation {
+            margin-top: 16px;
+        }
+
+        .citation {
+            margin-bottom: 10px;
+        }
+
         @media (max-width: 800px) {
             .page {
                 display: block;
@@ -144,26 +157,21 @@
     <header>
         <div>
             <div>
-                <div>
-                    <span>Scripture Reference Docs</span>
-                    <span>Archive</span>
-                </div>
+                <span>Scripture Reference Docs</span>
+                <span>Archive</span>
             </div>
 
             <div>
-                <!-- Search Input -->
-                <div>
-                    <input
-                        type="text"
-                        id="searchInput"
-                        onkeyup="filterContent()"
-                        placeholder="Search verses, deities, texts..."
-                    >
+                <input
+                    type="text"
+                    id="searchInput"
+                    onkeyup="filterContent()"
+                    placeholder="Search verses, deities, texts..."
+                >
 
-                    <button onclick="clearSearch()" id="clearBtn">
-                        Clear
-                    </button>
-                </div>
+                <button onclick="clearSearch()" id="clearBtn">
+                    Clear
+                </button>
             </div>
         </div>
     </header>
@@ -173,10 +181,8 @@
         <!-- Sidebar Navigation -->
         <aside>
             <div>
-                <div>
-                    <h3>Contents</h3>
-                    <span id="matchCount"></span>
-                </div>
+                <h3>Contents</h3>
+                <span id="matchCount"></span>
 
                 <nav id="tocNav">
                     <a href="#worst-verses">Worst Verses Overview</a>
@@ -198,8 +204,6 @@
                         <a href="#brahma-vaivarta">Brahma Vaivarta Purana</a>
                         <a href="#matsya-purana">Matsya Puranam</a>
                     </div>
-
-                    <a href="#manusmriti">Manusmriti</a>
                 </nav>
             </div>
         </aside>
@@ -221,9 +225,7 @@
 
                     <p>
                         A structured reference catalog compiled from primary Sanskrit
-                        scriptures, canonical Puranas, and accredited academic and
-                        devotional translations (including WisdomLib, Vedabase, and
-                        Sacred-Texts).
+                        scriptures, canonical Puranas, and cited translations.
                     </p>
                 </header>
 
@@ -238,7 +240,7 @@
                         <a href="#sb-81226-33">
                             SB 8.12.26-33
                         </a>
-                        by <strong>Shiva</strong> (2nd most popular Hindu god),
+                        by <strong>Shiva</strong>,
 
                         <a href="#sp-25-2338-46">
                             SP 2.5 23.38-46
@@ -248,7 +250,7 @@
                         <a href="#bvp-prakriti-kanda-2118-24">
                             BVP Prakriti Kanda 21.18-24
                         </a>
-                        by <strong>Vishnu</strong> (most popular Hindu god),
+                        by <strong>Vishnu</strong>,
 
                         <a href="#skp-531361-to-16">
                             SkP 5.3.136.1 to 16
@@ -258,7 +260,7 @@
                         <a href="#bvp-krishna-janma-kanda-6143-44">
                             BVP Krishna Janma Kanda 61.43-44
                         </a>
-                        by <strong>Indra</strong> (also see
+                        by <strong>Indra</strong>,
 
                         <a
                             href="https://www.valmiki.iitk.ac.in/sloka?field_kanda_tid=1&language=dv&field_sarga_value=48"
@@ -274,8 +276,8 @@
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            49
-                        </a>),
+                            Sarga 49
+                        </a>,
 
                         <a href="#sb-92036">
                             SB 9.20.36
@@ -305,7 +307,7 @@
                         <a href="#dbp-2613-to-35">
                             DBP 2.6.13 to 35
                         </a>
-                        by <strong>Surya (Sun)</strong>
+                        by <strong>Surya (Sun)</strong>.
                     </p>
 
                 </section>
@@ -315,31 +317,24 @@
 
                     <h2>Ramayana</h2>
 
-                    <div>
-                        <p>
-                            Referenced in main summary:
-
-                            <a
-                                href="https://www.valmiki.iitk.ac.in/sloka?field_kanda_tid=1&language=dv&field_sarga_value=48"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Balakanda Sarga 48
-                            </a>
-
-                            and
-
-                            <a
-                                href="https://www.valmiki.iitk.ac.in/sloka?field_kanda_tid=1&language=dv&field_sarga_value=49"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Sarga 49
-                            </a>
-
-                            (The story of Indra deceiving and assaulting Ahalya).
-                        </p>
-                    </div>
+                    <p>
+                        Referenced in main summary:
+                        <a
+                            href="https://www.valmiki.iitk.ac.in/sloka?field_kanda_tid=1&language=dv&field_sarga_value=48"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Balakanda Sarga 48
+                        </a>
+                        and
+                        <a
+                            href="https://www.valmiki.iitk.ac.in/sloka?field_kanda_tid=1&language=dv&field_sarga_value=49"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Sarga 49
+                        </a>.
+                    </p>
 
                 </section>
 
@@ -348,60 +343,37 @@
 
                     <h2>Upanishads</h2>
 
-                    <div>
+                    <div id="bu-647">
 
                         <h3>Brihadaranyaka Upanishad</h3>
 
-                        <div id="bu-647">
+                        <h4>BU 6.4.7</h4>
 
-                            <div>
+                        <p class="citation">
+                            <a
+                                href="https://www.wisdomlib.org/hinduism/book/the-brihadaranyaka-upanishad/d/doc122237.html"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                wisdomlib.org
+                            </a>
+                        </p>
 
-                                <h4>
-                                    Brihadaranyaka Upanishad 6.4.7
-                                    (BU 6.4.7)
-                                </h4>
+                        <p class="devanagari-text">
+                            सा चेदस्मै न दद्यात्, काममेनामवक्रिणीयात्;
+                            सा चेदस्मै नैव दद्यात्, काममेनां यष्ट्या वा
+                            पाणिना वोपहत्यातिक्रामेत्, इन्द्रियेण ते यशसा
+                            यश आदद इति; अयशा एव भवति ॥ ७ ॥
+                        </p>
 
-                                <div>
-
-                                    <button onclick="copyCitation('BU 6.4.7')">
-                                        Copy Citation
-                                    </button>
-
-                                    <a
-                                        href="https://www.wisdomlib.org/hinduism/book/the-brihadaranyaka-upanishad/d/doc122237.html"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        wisdomlib.org
-                                    </a>
-
-                                </div>
-
-                            </div>
-
-                            <p class="devanagari-text">
-                                सा चेदस्मै न दद्यात्, काममेनामवक्रिणीयात्;
-                                सा चेदस्मै नैव दद्यात्, काममेनां यष्ट्या वा
-                                पाणिना वोपहत्यातिक्रामेत्, इन्द्रियेण ते यशसा
-                                यश आदद इति; अयशा एव भवति ॥ ७ ॥
-                            </p>
-
-                            <div>
-
-                                <span>Wisdomlib Translation:</span>
-
-                                <p>
-                                    If she is not willing, he should buy her over;
-                                    and if she is still unyielding, he should strike
-                                    her with a stick or with the hand and proceed,
-                                    uttering the following Mantra, ‘I take away
-                                    your reputation,’ etc. She is then actually
-                                    discredited.
-                                </p>
-
-                            </div>
-
-                        </div>
+                        <p>
+                            <strong>Wisdomlib Translation:</strong>
+                            If she is not willing, he should buy her over;
+                            and if she is still unyielding, he should strike
+                            her with a stick or with the hand and proceed,
+                            uttering the following Mantra, ‘I take away your
+                            reputation,’ etc. She is then actually discredited.
+                        </p>
 
                     </div>
 
@@ -417,68 +389,91 @@
 
                         <h3>Shiva Purana</h3>
 
-                        <a
-                            href="https://www.wisdomlib.org/hinduism/book/shiva-purana-english"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            wisdomlib.org
-                        </a>
+                        <p class="source">
+                            Source:
+                            <a
+                                href="https://hinduismdebunked.com/scripture/SivaPurana.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                PDF
+                            </a>
+                            or
+                            <a
+                                href="https://www.wisdomlib.org/hinduism/book/shiva-purana-english"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                wisdomlib.org
+                            </a>
+                        </p>
 
                         <div id="sp-25-2338-46">
 
-                            <h4>
-                                SP 2.5 23.38-46 (Vishnu and Vrinda)
-                            </h4>
+                            <h4>SP 2.5 23.38-46</h4>
 
                             <p>
-                                38. On seeing her husband, Vṛndā too was delighted.
-                                She forgot her sorrow. She considered everything
-                                a dream.
+                                <a
+                                    href="https://www.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc226164.html"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    wisdomlib.org
+                                </a>
                             </p>
 
                             <p>
-                                39. Delighted in the heart and with all the dormant
+                                1. On seeing her husband, Vṛndā too was delighted.
+                                She forgot her sorrow. She considered everything a dream.
+                            </p>
+
+                            <p>
+                                2. Delighted in the heart and with all the dormant
                                 passions kindled up, she sported with him for many
                                 days in the middle of that forest.
                             </p>
 
                             <p>
-                                40. Once <strong>at the end of the sexual intercourse
+                                3. Once <strong>at the end of the sexual intercourse
                                 she realised that it was Viṣṇu</strong>. Vṛndā
                                 rebuked him <strong>angrily</strong> and spoke thus.
+                                Vṛndā said:—
                             </p>
 
                             <p>
-                                41. Fie on this misdeed of Viṣṇu in outraging the
+                                4. Fie on this misdeed of Viṣṇu in outraging the
                                 modesty of another man’s wife. I have now realised
                                 you as the wielder of illusion, appearing in the
-                                guise of an ascetic.
+                                guise of an ascetic. Sanatkumāra said:—
                             </p>
 
                             <p>
-                                42. Sanatkumāra said that she showed her powers as a
-                                staunch chaste lady by cursing Viṣṇu.
+                                5. O Vyāsa, saying thus in great anger she showed
+                                her brilliant powers as a staunch chaste lady by
+                                cursing Viṣṇu.
                             </p>
 
                             <p>
-                                43. She called him a base foe and defiler of another
-                                person's virtue.
+                                6. “O base foe of the Daityas, defiler of other
+                                people’s virtue, O wicked one, take this curse from
+                                me, greater in force than all persons.
                             </p>
 
                             <p>
-                                44. The two persons whom he made to appear before
-                                her would become Rākṣasas and abduct his wife.
+                                7. The two persons whom you made to appear in front
+                                of me shall become Rākṣasas[1] and abduct your wife.
                             </p>
 
                             <p>
-                                45. He would be distressed due to separation from
-                                his wife and seek the help of monkeys in the forest.
+                                8. You will be distressed on account of separation
+                                from your wife roaming about with Śeṣa ‘lord of
+                                snakes’[2] who posed as your disciple here. You will
+                                seek the help of monkeys[3] in the forest.
                             </p>
 
                             <p>
-                                46. After saying this, <strong>Vṛndā entered fire</strong>
-                                though prevented by Viṣṇu.
+                                9. After saying this, <strong>Vṛndā entered fire</strong>
+                                though prevented by Viṣṇu who was fascinated by her charms.
                             </p>
 
                         </div>
@@ -488,14 +483,12 @@
                     <!-- Bhagavata Purana -->
                     <div id="bhagavata-purana">
 
-                        <h3>Bhagavata Purana / Srimad Bhagavatam</h3>
+                        <h3>Bhagavata Purana or Srimad Bhagavatam</h3>
 
                         <!-- SB 8.12.26-33 -->
                         <div id="sb-81226-33">
 
-                            <h4>
-                                SB 8.12.26-33 (Shiva chasing Mohini)
-                            </h4>
+                            <h4>SB 8.12.26-33</h4>
 
                             <p class="devanagari-text">
                                 सा तमायान्तमालोक्य विवस्त्रा व्रीडिता भृशम् ।
@@ -513,17 +506,19 @@
                                 आत्मानं मोचयित्वाङ्ग सुरर्षभभुजान्तरात् ।
                                 प्राद्रवत्सा पृथुश्रोणी माया देवविनिर्मिता ॥ ३० ॥
 
-                                तस्यासौ पदवीं रुद्रो विष्णोरद्भुतकर्मण:
+                                तस्यासौ पदवीं रुद्रो विष्णोरद्भ‍ुतकर्मण:
                                 प्रत्यपद्यत कामेन वैरिणेव विनिर्जित: ॥ ३१ ॥
 
-                                तस्यानुधावतो रेतश्चस्कन्दामोघरेतस:
+                                तस्यानुधावतो रेतश्चस्कन्दामोघरेतस: ।
                                 शुष्मिणो यूथपस्येव वासितामनुधावत: ॥ ३२ ॥
 
-                                यत्र यत्रापतन्मह्यां रेतस्तस्य महात्मन:
+                                यत्र यत्रापतन्मह्यां रेतस्तस्य महात्मन: ।
                                 तानि रूप्यस्य हेम्नश्च क्षेत्राण्यासन्महीपते ॥ ३३ ॥
                             </p>
 
-                            <div>
+                            <div class="translation">
+
+                                <h5>srimadbhagavatam.org Translation</h5>
 
                                 <p>
                                     <a
@@ -531,20 +526,54 @@
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
-                                        srimadbhagavatam.org Translation
+                                        Source
                                     </a>
                                 </p>
 
                                 <p>
                                     The completely naked woman saw him coming and
                                     most embarrassed with a smile ran here and there
-                                    to hide behind the trees. Lord S'iva, Bhava,
+                                    to hide behind the trees. Lord S’iva, Bhava,
                                     distracted by his senses, fell victim to lust
-                                    like he was a male elephant going for a
-                                    she-elephant. Speeding after Her, he caught Her
-                                    by the braid of Her hair and pulled Her close
-                                    against Her will in order to embrace Her.
+                                    like he was a male elephant going for a she-elephant.
+                                    Speeding after Her, he caught Her by the braid of
+                                    Her hair and pulled Her close against Her will in
+                                    order to embrace Her.
                                 </p>
+
+                                <p>
+                                    She, the she-elephant, with Her hair scattered
+                                    being captured by him, the bull that was the Lord’s
+                                    devotee, squirming like a snake managed to free
+                                    Herself, oh King. Having escaped from the tight
+                                    grip of the Lord of the demigods, She ran quickly
+                                    away, with Her heavy hips so expressively exhibiting
+                                    the illusory potency of the Lord.
+                                </p>
+
+                                <p>
+                                    Like being haunted by the devil Rudra in the grip
+                                    of lust engaged in the pursuit of Him whose acts
+                                    so wondrously were taking place in front of him.
+                                </p>
+
+                                <p>
+                                    Chasing Her like a mad bull going for a female,
+                                    the semen was discharged of him who never spills
+                                    his semen in vain.
+                                </p>
+
+                                <p>
+                                    Each and every place where his semen fell on the
+                                    earth, oh great ruler, those places became mines
+                                    for silver and gold.
+                                </p>
+
+                            </div>
+
+                            <div class="translation">
+
+                                <h5>Vedabase / As It Is Translation</h5>
 
                                 <p>
                                     <a
@@ -552,19 +581,60 @@
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
-                                        Vedabase Translation
+                                        Source
                                     </a>
                                 </p>
 
                                 <p>
                                     The beautiful woman was already naked, and when
                                     She saw Lord Śiva coming toward Her, She became
-                                    extremely bashful. His senses being agitated,
-                                    Lord Śiva, victimized by lusty desires, began to
-                                    follow Her. After following Her with great
-                                    speed, Lord Śiva caught Her by the braid of Her
-                                    hair and dragged Her near him. Although She was
-                                    unwilling, he embraced Her with his arms.
+                                    extremely bashful. Thus She kept smiling, but She
+                                    hid Herself among the trees and did not stand in
+                                    one place.
+                                </p>
+
+                                <p>
+                                    His senses being agitated, Lord Śiva, victimized by
+                                    lusty desires, began to follow Her, just as a lusty
+                                    elephant follows a she-elephant.
+                                </p>
+
+                                <p>
+                                    After following Her with great speed, Lord Śiva
+                                    caught Her by the braid of Her hair and dragged
+                                    Her near him. Although She was unwilling, he
+                                    embraced Her with his arms.
+                                </p>
+
+                                <p>
+                                    Being embraced by Lord Śiva like a female elephant
+                                    embraced by a male, the woman, whose hair was
+                                    scattered, swirled like a snake. O King, this woman,
+                                    who had large, high hips, was a woman of yoga-māyā
+                                    presented by the Supreme Personality of Godhead.
+                                    She released Herself somehow or other from the
+                                    fond embrace of Lord Śiva’s arms and ran away.
+                                </p>
+
+                                <p>
+                                    As if harassed by an enemy in the form of lusty
+                                    desires, Lord Śiva followed the path of Lord Viṣṇu,
+                                    who acts very wonderfully and who had taken the
+                                    form of Mohinī.
+                                </p>
+
+                                <p>
+                                    Just as a maddened bull elephant follows a female
+                                    elephant who is able to conceive pregnancy, Lord
+                                    Śiva followed the beautiful woman and discharged
+                                    semen, even though his discharge of semen never
+                                    goes in vain.
+                                </p>
+
+                                <p>
+                                    O King, wheresoever on the surface of the globe
+                                    fell the semen of the great personality of Lord
+                                    Śiva, mines of gold and silver later appeared.
                                 </p>
 
                             </div>
@@ -574,16 +644,14 @@
                         <!-- SB 9.14.4 -->
                         <div id="sb-9144">
 
-                            <h4>
-                                SB 9.14.4 (Soma kidnaps Tara)
-                            </h4>
+                            <h4>SB 9.14.4</h4>
 
                             <p class="devanagari-text">
                                 सोऽयजद् राजसूयेन विजित्य भुवनत्रयम् ।
                                 पत्नीं बृहस्पतेर्दर्पात् तारां नामाहरद् बलात् ॥ ४ ॥
                             </p>
 
-                            <div>
+                            <div class="translation">
 
                                 <p>
                                     <a
@@ -591,13 +659,15 @@
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
-                                        srimadbhagavatam.org:
+                                        srimadbhagavatam.org
                                     </a>
+                                </p>
 
-                                    After he had conquered the three worlds,
-                                    he performed a Râjasûya sacrifice and
-                                    kidnapped in his arrogance with force Târâ,
-                                    the wife of Brihaspati.
+                                <p>
+                                    After he had conquered the three worlds, he
+                                    performed a Râjasûya sacrifice and kidnapped
+                                    in his arrogance with force Târâ, the wife of
+                                    Brihaspati.
                                 </p>
 
                                 <p>
@@ -606,11 +676,16 @@
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
-                                        Vedabase:
+                                        Vedabase
                                     </a>
+                                </p>
 
-                                    After conquering the three worlds, Soma,
-                                    the moon-god, forcibly kidnapped Bṛhaspati’s
+                                <p>
+                                    After conquering the three worlds [the upper,
+                                    middle and lower planetary systems], Soma,
+                                    the moon-god, performed a great sacrifice known
+                                    as the Rājasūya-yajña. Because he was very much
+                                    puffed up, he forcibly kidnapped Bṛhaspati’s
                                     wife, whose name was Tārā.
                                 </p>
 
@@ -621,16 +696,14 @@
                         <!-- SB 9.20.36 -->
                         <div id="sb-92036">
 
-                            <h4>
-                                SB 9.20.36 (Brihaspati and Mamata)
-                            </h4>
+                            <h4>SB 9.20.36</h4>
 
                             <p class="devanagari-text">
-                                अन्तर्वत्‍न्यां भ्रातृपत्‍न्यां मैथुनाय बृहस्पति:
+                                अन्तर्वत्‍न्यां भ्रातृपत्‍न्यां मैथुनाय बृहस्पति: ।
                                 प्रवृत्तो वारितो गर्भं शप्‍त्वा वीर्यमुपासृजत् ॥ ३६ ॥
                             </p>
 
-                            <div>
+                            <div class="translation">
 
                                 <p>
                                     <a
@@ -638,12 +711,16 @@
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
-                                        srimadbhagavatam.org:
+                                        srimadbhagavatam.org
                                     </a>
+                                </p>
 
-                                    Brihaspati felt attracted to his brother’s
-                                    pregnant wife and wanted to make love to her.
-                                    But when the son in the womb forbade him,
+                                <p>
+                                    Brihaspati [the scholar and priest of the
+                                    demigods who was his father, in the past]
+                                    felt attracted to his brother’s pregnant wife
+                                    and wanted to make love to her. But when the
+                                    son in the womb forbade him to engage that way,
                                     he cursed him and discharged his semen anyway.
                                 </p>
 
@@ -653,14 +730,17 @@
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
-                                        Vedabase:
+                                        Vedabase
                                     </a>
+                                </p>
 
-                                    When Bṛhaspati was attracted by his brother’s
-                                    wife, Mamatā, who was pregnant, he desired to
-                                    have sexual relations with her. The son within
-                                    her womb forbade this, but Bṛhaspati cursed him
-                                    and forcibly discharged semen into the womb.
+                                <p>
+                                    When the demigod named Bṛhaspati was attracted
+                                    by his brother’s wife, Mamatā, who at that time
+                                    was pregnant, he desired to have sexual relations
+                                    with her. The son within her womb forbade this,
+                                    but Bṛhaspati cursed him and forcibly discharged
+                                    semen into the womb of Mamatā.
                                 </p>
 
                             </div>
@@ -670,9 +750,7 @@
                         <!-- SB 9.24.33-35 -->
                         <div id="sb-92433-to-35">
 
-                            <h4>
-                                SB 9.24.33 to 35 (Surya and Kunti)
-                            </h4>
+                            <h4>SB 9.24.33 to 35</h4>
 
                             <p class="devanagari-text">
                                 तदैवोपागतं देवं वीक्ष्य विस्मितमानसा ।
@@ -681,11 +759,13 @@
                                 अमोघं देवसन्दर्शमादधे त्वयि चात्मजम् ।
                                 योनिर्यथा न दुष्येत कर्ताहं ते सुमध्यमे ॥ ३४ ॥
 
-                                इति तस्यां स आधाय गर्भं सूर्यो दिवं गत:
+                                इति तस्यां स आधाय गर्भं सूर्यो दिवं गत: ।
                                 सद्य: कुमार: सञ्जज्ञे द्वितीय इव भास्कर: ॥ ३५ ॥
                             </p>
 
-                            <div>
+                            <div class="translation">
+
+                                <h5>srimadbhagavatam.org</h5>
 
                                 <p>
                                     <a
@@ -693,14 +773,32 @@
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
-                                        srimadbhagavatam.org:
+                                        Source
                                     </a>
-
-                                    When she saw the godhead appearing before her,
-                                    she asked him to return and excuse her. The
-                                    sun god then made her pregnant and returned to
-                                    his heavenly abode.
                                 </p>
+
+                                <p>
+                                    When she saw the godhead appearing before her,
+                                    she was very surprised and said: ‘Forgive me,
+                                    oh godhead, please return, I only engaged this
+                                    way to check out what it would do!’
+                                </p>
+
+                                <p>
+                                    [The sun god answered:] ‘In order not to be
+                                    fruitless in your encounter with a godhead,
+                                    I shall give you a son in your womb and arrange
+                                    it so, oh my beauty, that you will not be defiled.’
+                                </p>
+
+                                <p>
+                                    With this promise the sun god made her pregnant
+                                    and returned to his heavenly abode. Directly
+                                    thereafter a child was born that looked like
+                                    a second sun god.
+                                </p>
+
+                                <h5>Vedabase</h5>
 
                                 <p>
                                     <a
@@ -708,13 +806,33 @@
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
-                                        Vedabase:
+                                        Source
                                     </a>
+                                </p>
 
-                                    She told the sun-god that she had called him
-                                    unnecessarily and asked him to return. The
-                                    sun-god said their meeting could not be fruitless
-                                    and then discharged semen into her womb.
+                                <p>
+                                    As soon as Kuntī called for the demigod of the
+                                    sun, he immediately appeared before her, and she
+                                    was very much surprised. She told the sun-god,
+                                    “I was simply examining the effectiveness of this
+                                    mystic power. I am sorry I have called you
+                                    unnecessarily. Please return and excuse me.”
+                                </p>
+
+                                <p>
+                                    The sun-god said: O beautiful Pṛthā, your meeting
+                                    with the demigods cannot be fruitless. Therefore,
+                                    let me place my seed in your womb so that you may
+                                    bear a son. I shall arrange to keep your virginity
+                                    intact, since you are still an unmarried girl.
+                                </p>
+
+                                <p>
+                                    After saying this, the sun-god discharged his
+                                    semen into the womb of Pṛthā and then returned to
+                                    the celestial kingdom. Immediately thereafter,
+                                    from Kuntī a child was born, who was like a second
+                                    sun-god.
                                 </p>
 
                             </div>
@@ -728,40 +846,74 @@
 
                         <h3>Devi Bhagavata Purana</h3>
 
-                        <a
-                            href="https://www.sacred-texts.com/hin/db/bk02ch06.htm"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            sacred-texts.com
-                        </a>
+                        <p>
+                            Source:
+                            <a
+                                href="https://www.sacred-texts.com/hin/db/bk02ch06.htm"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                sacred-texts.com
+                            </a>
+                        </p>
 
                         <div id="dbp-2613-to-35">
 
-                            <h4>
-                                DBP 2.6.13 to 35 (Surya and Kunti)
-                            </h4>
+                            <h4>DBP 2.6.13 to 35</h4>
 
                             <p>
-                                Sûta then said: -- “O Dvija! While Sûrasena's
-                                daughter Kunti was a virgin girl... Durvâsâ Muni
-                                gave her a mantra... Seeing the God Sûrya had
-                                arisen in the sky, Kunti uttered the Mantra...
-                                The Sun, then, assuming an excellent human form,
-                                came down... Sûrya Deva said: -- 'O Kunti! ...
-                                Seeing you, I have become passionate; so come to
+                                Sûta then said :– “O Dvija! While Sûrasena’s daughter
+                                Kunti was a virgin girl, the king Kuntibhoja asked
+                                for Kunti that she might become her girl and Sûrasena
+                                gave her to the king Kuntibhoja who brought up this
+                                beautifully smiling girl. He put to her the service
+                                of Agni of Agnihotra. Once, on an occassion, Durvâsâ
+                                Muni, engaged in the vow, lasting for four months,
+                                came there; Kunti served him during that period; the
+                                Muni became greatly pleased and gave her a very
+                                auspicious, mantra, by virtue of which any Deva,
+                                when called upon by that mantra will come to Kunti
+                                and satisfy her desires. When the Muni went away,
+                                Kunti, remaining in her house, wanted to test the
+                                accuracy of the mantra and asked within herself
+                                “What Devatâ to call upon.” Seeing the God Sûrya
+                                had arisen in the sky, Kunti uttered the Mantra and
+                                invoked him. The Sun, then, assuming an excellent
+                                human form, came down from the Heavens and appeared
+                                before Kunti in the same room. Seeing the Deva Sun,
+                                Kunti became greatly surprised and began to shudder
+                                and instantly became endowed with the inherent
+                                natural quality of passion (had menstruation).
+                                The beautiful-eyed Kunti, with folded palm; spoke to
+                                Sûrya Deva standing before :– “I am highly pleased
+                                to-day seeing Thy form; now go back to Thy sphere.”
+
+                                Sûrya Deva said :– “O Kunti! What for you called me,
+                                by virtue of the Mantra? Calling me, why do you not
+                                worship me, standing before you? O beautiful blue
+                                one! Seeing you, I have become passionate; so come to
                                 me. By means of the mantra, you have made me your
-                                subservient so take me for intercourse.'
-                                Hearing this, Kunti said: 'O Witness of all!
-                                O knower of Dharma! You know that I am a virgin
-                                girl. I bow down to you; I am a family daughter;
-                                so do not speak ill to me.'
-                                Sûrya then said: 'If I go away in vain, I will be
-                                an object of great shame... If you do not satisfy
-                                me, I will immediately curse you and the Brâhmin
-                                who has given you this mantra.' Thus saying Sûrya
-                                Deva enjoyed the bashful Kunti... The beautiful
-                                Kunti became pregnant...”
+                                subservient so take me for intercourse.” Hearing this,
+                                Kunti said: – “O Witness of all! O knower of Dharma!
+                                You know that I am a virgin girl. O Suvrata! I bow down
+                                to you; I am a family daughter; so do not speak ill to
+                                me.” Sûrya then said: – “If I go away in vain, I will
+                                be an object of great shame, and, no doubt, will be
+                                laughed amongst the gods; So, O Kunti! If you do not
+                                satisfy me, I will immediately curse you and the
+                                Brâhmin who has given you this mantra”. O Beautiful
+                                one! If you satisfy me, your virginity will remain;
+                                no body will come to know and there will be born a
+                                son to you, exactly like me.” Thus saying Sûrya Deva
+                                enjoyed the bashful Kunti, with her mind attracted
+                                towards him; He granted her the desired boons and went
+                                away. The beautiful Kunti became pregnant and began
+                                to remain in a house, under great secrecy. Only the
+                                dear nurse knew that; her mother or any other person
+                                was quite unaware of the fact. In time, a very
+                                beautiful son like the second Sun and Kârtikeya,
+                                decked with a lovely Kavacha coat of mail and two
+                                ear-rings, was born there.
                             </p>
 
                         </div>
@@ -773,28 +925,94 @@
 
                         <h3>Skanda Purana</h3>
 
-                        <a
-                            href="https://www.wisdomlib.org/hinduism/book/the-skanda-purana/d/doc425865.html"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            wisdomlib.org
-                        </a>
+                        <p>
+                            Source:
+                            <a
+                                href="https://www.wisdomlib.org/hinduism/book/the-skanda-purana/d/doc425865.html"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                wisdomlib.org
+                            </a>
+                        </p>
 
                         <div id="skp-531361-to-16">
 
-                            <h4>
-                                SkP 5.3.136.1 to 16 (Indra and Ahalya)
-                            </h4>
+                            <h4>SkP 5.3.136.1 to 16</h4>
 
                             <p>
-                                Śrī Mārkaṇḍeya said: 1-7. Thereafter... Śatakratu,
-                                the king of Devas, was infatuated by the exceptional
-                                beauty of Ahalyā... 8-16. Sensing her emotional
-                                upheaval... he assumed the excellent guise of the
-                                sage and carnally delighted Ahalyā who believed
-                                that he was Gautama in the inner apartment...
-                                Gautama became highly enraged and cursed Devendra.
+                                Śrī Mārkaṇḍeya said:
+                            </p>
+
+                            <p>
+                                1-7. Thereafter, O king, one should go to the excellent
+                                Ahalyeśvara Tīrtha where the blessed ascetic lady
+                                Ahalyā received redemption and fulfilment formerly.
+                            </p>
+
+                            <p>
+                                There was a Brāhmaṇa named Gautama who was like another
+                                Brahmā. He was endowed with truthfulness and piety.
+                                He was engrossed in the Vānaprastha stage of life.
+                            </p>
+
+                            <p>
+                                His blessed wife named Ahalyā was very famous in all
+                                the three worlds as a woman endowed with beauty and
+                                prime of youth.
+                            </p>
+
+                            <p>
+                                Śatakratu, the king of Devas, was infatuated by the
+                                exceptional beauty of Ahalyā. The Slayer of Bala,
+                                therefore, tempted her.
+                            </p>
+
+                            <p>
+                                “O beautiful lady of uncensured features, resort to
+                                me, the king of Devas. Sport about with me. You shall
+                                be one honoured in all the three worlds. What will
+                                you do with this Brāhmaṇa who has become lean and
+                                emaciated due to his over-zealous-ness for purity and
+                                conventional rites and austerities and Vedic studies!
+                                O lady of beautiful eyes, you must be rather undergoing
+                                sufferings now.”
+                            </p>
+
+                            <p>
+                                On being told thus, the beautiful lady, very fickle
+                                by nature as all women are, became confused and
+                                defiled by the god of Love. Mentally she became
+                                overwhelmed by Śakra.
+                            </p>
+
+                            <p>
+                                8-16. Sensing her emotional upheaval the Lord who
+                                slew Pāka was so overcome by wicked intentions that
+                                he deceived Gautama.
+                            </p>
+
+                            <p>
+                                Getting an opportunity, he assumed the excellent
+                                guise of the sage and carnally delighted Ahalyā who
+                                believed (that he was Gautama) in the inner apartment.
+                            </p>
+
+                            <p>
+                                Within a moment thereafter, O descendant of Bharata,
+                                the excellent sage hurriedly entered the apartment.
+                            </p>
+
+                            <p>
+                                On seeing Gautama come Purandara became terrified
+                                and he went out. Seeing him he thought (knew) that
+                                it was Śakra. So Gautama became highly enraged and
+                                he cursed Devendra: “Since you could not control your
+                                senses, be one with a thousand vaginal apertures.”
+                                On being cursed thus, Devendra was instantly covered
+                                with a thousand vaginal apertures. He became bereft
+                                of all glory. He left the kingdom and the Suras too.
+                                He performed elaborate penance on the earth.
                             </p>
 
                         </div>
@@ -806,62 +1024,160 @@
 
                         <h3>Brahma Vaivarta Purana</h3>
 
+                        <!-- BVP 21.18-24 -->
                         <div id="bvp-prakriti-kanda-2118-24">
 
-                            <h4>
-                                BVP Prakriti Kanda 21.18-24
-                                (Vishnu and Tulsi/Vrinda)
-                            </h4>
+                            <h4>BVP Prakriti Kanda 21.18-24</h4>
+
+                            <p>
+                                Source:
+                                <a
+                                    href="https://archive.org/details/brahma-vaivarta-purana-all-four-kandas-english-translation"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    archive.org — Page 306
+                                </a>
+                            </p>
 
                             <p>
                                 O Narada, thereafter lord Visnu enjoyed the company
-                                of the damsel. TulasI felt more delighted than
-                                before and she ultimately came to know about the
-                                reality and said: “Who are you”? TulasI said:
-                                “Are you not the lord of illusion”? You tell me
-                                who you are? You have deceitfully enjoyed my
-                                company and have defiled my chastity. Therefore
-                                I shall pronounce a curse on you. TulasI said:
-                                O lord, you are heartless, having no compassion.
-                                You are hard like a stone. You have defiled my
-                                chastity deceitfully and have killed my husband.
+                                of the damsel. TulasI felt more delighted than before
+                                and she ultimately came to know about the reality and
+                                said: “Who are you”?
+                            </p>
+
+                            <p>
+                                TulasI said—“Are you not the lord of illusion”? You
+                                tell me who you are? You have deceitfully enjoyed my
+                                company and have defiled my chastity. Therefore I
+                                shall pronounce a curse on you. O Rrahmana, getting
+                                afraid of the curse of TulasI, lord Visnii playfully
+                                took to an extremely charming form. The queen saw
+                                that the lord of all the lords was standing before
+                                her who had the complexion of a new cloud, had the
+                                eyes like the lotuses of the winter season, had a
+                                beautiful body containing crores of gods of love,
+                                adorned with all ornaments, wearing a smile on his
+                                face and clad in a yellow lower garment.
+                            </p>
+
+                            <p>
+                                Finding him there, lustful TulasI fainted with passion.
+                                On regaining consciousness she spoke.
+                            </p>
+
+                            <p>
+                                TulasI said—O lord, you are heartless, having no
+                                compassion. You are hard like a stone. You have
+                                defiled my chastity deceitfully and have killed my
+                                husband.
+                            </p>
+
+                            <p>
+                                O lord, therefore you are stone-hearted and devoid
+                                of compassion. You will therefore take the form of
+                                a stone on earth.
                             </p>
 
                         </div>
 
+                        <!-- BVP 61.43-44 -->
                         <div id="bvp-krishna-janma-kanda-6143-44">
 
-                            <h4>
-                                BVP Krishna Janma Kanda 61.43-44
-                                (Indra and Ahalya)
-                            </h4>
+                            <h4>BVP Krishna Janma Kanda 61.43-44</h4>
 
                             <p>
-                                Reaching there she narrated the entire story to
-                                the sage Gautama... in the meantime Indra
-                                impersonating himself as Gautama enjoyed the
-                                company of Ahalya. Gautama spotted Indra moving
-                                out of his hermitage and found Ahalya lying there.
-                                The sage then pronounced a curse on Indra.
+                                Source:
+                                <a
+                                    href="https://archive.org/details/brahma-vaivarta-purana-all-four-kandas-english-translation"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    archive.org — Page 433
+                                </a>
+                            </p>
+
+                            <p>
+                                Reaching there she narrated the entire story to the
+                                sage Gautama laughingly denounced Indra very much.
+                                Soon thereafter Gautama went to Siva, in the meantime
+                                Indra impersonating himself as Gautama enjoyed the
+                                company of Ahalya.
+                            </p>
+
+                            <p>
+                                The all knowledgeable sage came to know about everything
+                                and immediately returned to his abode. Gatuama the best
+                                of the sages spotted Indra moving out of his hermitage
+                                and also found Ahalya having the developed pelvic region
+                                and the breasts, lying unrobed there. The sage then
+                                pronounced a curse on Indra, “You will have yonis all
+                                through your body”. In anger he pronounced a curse also
+                                on the terrified and crying Ahalya, ‘In the thick forest
+                                you will be turned into a stone”. After getting immensely
+                                ashamed Indra went to his abode but the terrified Ahalya
+                                with her mind filled with grief spoke sweet words to
+                                Gautama.
                             </p>
 
                         </div>
 
+                        <!-- BVP 80.11-19 -->
                         <div id="bvp-krishna-janma-kanda-8011-19">
 
-                            <h4>
-                                BVP Krishna Janma Kanda 80.11-19
-                                (Soma and Tara)
-                            </h4>
+                            <h4>BVP Krishna Janma Kanda 80.11-19</h4>
 
                             <p>
-                                Tara said: O moon you leave me... I happen to be
-                                the wife of your teacher and also the daughter of
-                                a Brahmana... I happen to be your mother and you
-                                happen to be my son. The moon did not listen to
-                                Tara and got ready to cohabit with her... thereafter
-                                the moon caught hold of Tara and enjoyed her company
-                                while she was crying and sobbing.
+                                Source:
+                                <a
+                                    href="https://archive.org/details/brahma-vaivarta-purana-all-four-kandas-english-translation"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    archive.org — Page 516
+                                </a>
+                            </p>
+
+                            <p>
+                                Tara said- O moon you leave me, O blemish for the gods,
+                                leave me alone. I happen to be the wife of your teacher
+                                and also the daughter of a Brahmana, I have always been
+                                chaste and virtuous. One has to earn the sin of hundred
+                                Brahmahaty&s by cohabiting with the wife of a teacher.
+                                If the wife of a teacher happens to be the daughter of
+                                a Brahmana and a chaste one, cohabiting with her earns
+                                the sins of a thousand Brahmahatyds.
+                            </p>
+
+                            <p>
+                                Therefore, lord of gods, you be patient, look I happen
+                                to be your mother and you happen to be my son. In case
+                                you indulge in such a type of deplorable action, you
+                                will earn disgrace and on hearing this Brhaspati, the
+                                teacher of the gods would reduce you to ashes. You
+                                happen to be the pupil of my husband and are dear to
+                                him like his own son. Therefore, sinful one, don’t
+                                indulge in this. You leave the mother like me free and
+                                protect the dharma and in case you would touch me again
+                                I shall shower on you the sin of the killing of a woman.
+                                The moon a on the other hand, did not listen to the
+                                words of TSra and got ready to cohabit with her. At
+                                this Tara who was free from passion and was quite
+                                chaste, became enraged and pronounced a curse on him,
+                                “You would be eclipsed by Rahu, covered with the clouds
+                                and would be quite sinful to look at. You would be
+                                filled with blemish and suffer from the disease of
+                                consumption. There is no doubt about it.”.
+                            </p>
+
+                            <p>
+                                Thus pronouncing a curse on the moon she also pronounced
+                                a curse on the god of love, “You would be reduced to
+                                ashes by an illustrious person. O lord of Vraja,
+                                thereafter the moon caught hold of Tara and enjoyed her
+                                company who was crying and sobbing. He took her in his
+                                lap and moved from that place.
                             </p>
 
                         </div>
@@ -875,20 +1191,48 @@
 
                         <div id="mp-4917-28">
 
-                            <h4>
-                                MP 49.17-28 (Brihaspati and Mamata)
-                            </h4>
+                            <h4>MP 49.17-28</h4>
 
                             <p>
-                                Suta said: Brihaspati, whilst staying on Earth,
-                                one day saw the wife of his brother, Mamata, who
-                                was big with child, and addressed her thus:
-                                “Dress yourself well and let us enjoy.” She replied
-                                that the embryo in her womb was mature and that
-                                his proposal was sinful. After saying that, he
-                                carried out his desire by force. When the child
-                                from her womb cried out, Brihaspati replied in
-                                anger and cast his seed on the floor.
+                                Source:
+                                <a
+                                    href="https://archive.org/details/in.ernet.dli.2015.45856/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    archive.org — Page 168
+                                </a>
+                            </p>
+
+                            <p>
+                                Suta said : — Bfihaspati, whilst slaying on Earth,
+                                one day saw the wife of his brother, Wija, who was
+                                big Avith child, and addressed her thus: — “ Dress
+                                thj’sclf well and let us enjoy.” She, being thus
+                                addressed, replied to Brihaspati thus : — ” Tlie
+                                embryo in my womb is mature and is already reciting
+                                the Vedas, Thy seed will also not be fruitless and
+                                thy proposal is sinful.” Hearing which, Bfihaspati
+                                said : — ” I need not be taught morality by thee,
+                                0 sweet one.” After saying that, he carried out his
+                                desire by force ; when on the verge of his final
+                                enjoyment, the child from her womb cried out to
+                                Bfihaspati : — ” I have entered the womb first,
+                                0 Bfihaspati, thy seed will also not go in vain.
+                                There is no room for a second body in this womb.”
+                                Bfihaspati being thus addressed by the child in
+                                the womb, replied in anger : — “ Because on such
+                                an occasion, dear to every creature, thou preventest
+                                me from enjoyment, thou shouldst see lasting
+                                darkness [Dirgbatamas].” -17-28.
+                            </p>
+
+                            <p>
+                                Afterwards, Bfihaspati cast his seed on the floor
+                                which at once became a child ; seeing whom, MamatA
+                                said to Bfihaspati, “lam going home, you should
+                                support [Bbara] this child [born of us two (dvfija)],
+                                0 Bfihaspati.” — 24-25.
                             </p>
 
                         </div>
@@ -909,30 +1253,26 @@
     <script>
         function filterContent() {
             const query = document
-                .getElementById('searchInput')
+                .getElementById("searchInput")
                 .value
                 .toLowerCase()
                 .trim();
 
-            const clearBtn = document.getElementById('clearBtn');
-            const matchCount = document.getElementById('matchCount');
+            const clearBtn = document.getElementById("clearBtn");
+            const matchCount = document.getElementById("matchCount");
 
             const contentBlocks = document.querySelectorAll(
-                '#contentArea section, #contentArea div[id]'
+                "#contentArea section, #contentArea div[id]"
             );
 
-            if (query.length > 0) {
-                clearBtn.style.display = 'inline-block';
-            } else {
-                clearBtn.style.display = 'none';
-            }
+            clearBtn.style.display = query ? "inline-block" : "none";
 
             if (!query) {
                 contentBlocks.forEach(block => {
-                    block.style.display = '';
+                    block.style.display = "";
                 });
 
-                matchCount.textContent = '';
+                matchCount.textContent = "";
                 return;
             }
 
@@ -942,10 +1282,10 @@
                 const text = block.textContent.toLowerCase();
 
                 if (text.includes(query)) {
-                    block.style.display = '';
+                    block.style.display = "";
                     matches++;
                 } else {
-                    block.style.display = 'none';
+                    block.style.display = "none";
                 }
             });
 
@@ -953,49 +1293,8 @@
         }
 
         function clearSearch() {
-            document.getElementById('searchInput').value = '';
+            document.getElementById("searchInput").value = "";
             filterContent();
-        }
-
-        function copyCitation(text) {
-            const showToast = () => {
-                const toast = document.getElementById('toast');
-
-                toast.style.display = 'block';
-
-                setTimeout(() => {
-                    toast.style.display = 'none';
-                }, 2000);
-            };
-
-            if (navigator.clipboard) {
-                navigator.clipboard
-                    .writeText(text)
-                    .then(showToast)
-                    .catch(() => fallbackCopy(text));
-            } else {
-                fallbackCopy(text);
-            }
-        }
-
-        function fallbackCopy(text) {
-            const textarea = document.createElement('textarea');
-
-            textarea.value = text;
-            document.body.appendChild(textarea);
-
-            textarea.select();
-            document.execCommand('copy');
-
-            document.body.removeChild(textarea);
-
-            const toast = document.getElementById('toast');
-
-            toast.style.display = 'block';
-
-            setTimeout(() => {
-                toast.style.display = 'none';
-            }, 2000);
         }
     </script>
 
