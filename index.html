@@ -100,6 +100,21 @@
             line-height: 1.8;
         }
 
+        #clearBtn {
+            display: none;
+        }
+
+        #toast {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #222;
+            color: #fff;
+            padding: 10px 14px;
+            border-radius: 4px;
+            display: none;
+        }
+
         @media (max-width: 800px) {
             .page {
                 display: block;
@@ -165,10 +180,7 @@
 
                 <nav id="tocNav">
                     <a href="#worst-verses">Worst Verses Overview</a>
-                    <a href="#vedas">Vedas</a>
-                    <a href="#bhagavad-gita">Bhagavad Gita</a>
                     <a href="#ramayana">Ramayana</a>
-                    <a href="#mahabharata">Mahabharata</a>
 
                     <a href="#upanishads">Upanishads</a>
 
@@ -298,32 +310,6 @@
 
                 </section>
 
-                <!-- Vedas -->
-                <section id="vedas">
-
-                    <h2>Vedas</h2>
-
-                    <div>
-                        <h3>Rig Veda</h3>
-
-                        <p>
-                            No direct verses quoted in this section.
-                        </p>
-                    </div>
-
-                </section>
-
-                <!-- Bhagavad Gita -->
-                <section id="bhagavad-gita">
-
-                    <h2>Bhagavad Gita</h2>
-
-                    <p>
-                        No direct verses quoted in this section.
-                    </p>
-
-                </section>
-
                 <!-- Ramayana -->
                 <section id="ramayana">
 
@@ -354,17 +340,6 @@
                             (The story of Indra deceiving and assaulting Ahalya).
                         </p>
                     </div>
-
-                </section>
-
-                <!-- Mahabharata -->
-                <section id="mahabharata">
-
-                    <h2>Mahabharata</h2>
-
-                    <p>
-                        No direct verses quoted in this section.
-                    </p>
 
                 </section>
 
@@ -482,8 +457,8 @@
                             </p>
 
                             <p>
-                                42. Sanatkumāra said that she showed her powers as
-                                a staunch chaste lady by cursing Viṣṇu.
+                                42. Sanatkumāra said that she showed her powers as a
+                                staunch chaste lady by cursing Viṣṇu.
                             </p>
 
                             <p>
@@ -585,8 +560,8 @@
                                     The beautiful woman was already naked, and when
                                     She saw Lord Śiva coming toward Her, She became
                                     extremely bashful. His senses being agitated,
-                                    Lord Śiva, victimized by lusty desires, began
-                                    to follow Her. After following Her with great
+                                    Lord Śiva, victimized by lusty desires, began to
+                                    follow Her. After following Her with great
                                     speed, Lord Śiva caught Her by the braid of Her
                                     hair and dragged Her near him. Although She was
                                     unwilling, he embraced Her with his arms.
@@ -722,9 +697,9 @@
                                     </a>
 
                                     When she saw the godhead appearing before her,
-                                    she asked him to return and excuse her. The sun
-                                    god then made her pregnant and returned to his
-                                    heavenly abode.
+                                    she asked him to return and excuse her. The
+                                    sun god then made her pregnant and returned to
+                                    his heavenly abode.
                                 </p>
 
                                 <p>
@@ -932,7 +907,6 @@
     </div>
 
     <script>
-        // Search and Filter Functionality
         function filterContent() {
             const query = document
                 .getElementById('searchInput')
@@ -984,37 +958,45 @@
         }
 
         function copyCitation(text) {
+            const showToast = () => {
+                const toast = document.getElementById('toast');
+
+                toast.style.display = 'block';
+
+                setTimeout(() => {
+                    toast.style.display = 'none';
+                }, 2000);
+            };
+
             if (navigator.clipboard) {
-                navigator.clipboard.writeText(text);
+                navigator.clipboard
+                    .writeText(text)
+                    .then(showToast)
+                    .catch(() => fallbackCopy(text));
             } else {
-                const textarea = document.createElement('textarea');
-
-                textarea.value = text;
-
-                document.body.appendChild(textarea);
-
-                textarea.select();
-
-                document.execCommand('copy');
-
-                document.body.removeChild(textarea);
+                fallbackCopy(text);
             }
-
-            showToast(`Copied "${text}" to clipboard!`);
         }
 
-        function showToast(msg) {
-            const toast = document.getElementById('toast');
-            const toastMsg = document.getElementById('toastMsg');
+        function fallbackCopy(text) {
+            const textarea = document.createElement('textarea');
 
-            toastMsg.textContent = msg;
+            textarea.value = text;
+            document.body.appendChild(textarea);
+
+            textarea.select();
+            document.execCommand('copy');
+
+            document.body.removeChild(textarea);
+
+            const toast = document.getElementById('toast');
+
+            toast.style.display = 'block';
 
             setTimeout(() => {
-                toastMsg.textContent = '';
-            }, 2500);
+                toast.style.display = 'none';
+            }, 2000);
         }
-
-        document.getElementById('clearBtn').style.display = 'none';
     </script>
 
 </body>
